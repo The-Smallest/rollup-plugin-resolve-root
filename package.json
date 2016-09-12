@@ -1,0 +1,8 @@
+{
+  "name": "rollup-plugin-resolve-root",
+  "version": "0.1.0",
+  "description": "Plugin helps rollup to recognize absolute path in module's name",
+  "main": "index.js",
+  "author": "Ivan Samoylenko",
+  "license": "ISC"
+}

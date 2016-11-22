@@ -22,7 +22,9 @@ function resolveRoot(options) {
       return path.resolve(root)
 
     if (importer && (importee.startsWith('./') || importee.startsWith('../')))
-      return path.dirname(importer)
+      !importee.endsWith('.js') 
+        ? return path.dirname(`${importer}.js`)
+        : return path.dirname(importer);
   }
 }
 
